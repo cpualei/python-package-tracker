@@ -1,0 +1,13 @@
+<html>
+    <head>
+    </head>
+    <body>
+        {% for field in form %}
+            {% if field.name == "csrf_token" or field.name == "submit" %}
+                <p>{{ field }}</p>
+            {% else %}
+                <p>{{ field.label }}{{ field }}</p>
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>
