@@ -1,9 +1,6 @@
 from wsgiref.validate import validator
 from flask_wtf import FlaskForm
-from wtforms import (
-    StringField, SelectField,
-    BooleanField, SubmitField
-)
+from wtforms import StringField, SelectField, BooleanField, SubmitField
 from wtforms.validators import DataRequired
 from map.map import map
 
